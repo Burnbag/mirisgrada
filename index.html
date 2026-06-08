@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="hr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moderni Web Sustav</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://jsdelivr.net"></script>
+    <!-- FontAwesome za ikone -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+    <!-- Navigacija -->
+    <nav class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid font-bold text-cyan-400 text-2xl">⚡</i>
+                <span class="text-xl font-bold tracking-tight bg-gradient-to-r flex from-cyan-400 to-indigo-400 bg-clip-text text-transparent">NEXUS</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#pocetna" class="hover:text-cyan-400 transition-colors">Početna</a>
+                <a href="#znacajke" class="hover:text-cyan-400 transition-colors">Značajke</a>
+                <a href="#usluge" class="hover:text-cyan-400 transition-colors">Usluge</a>
+                <a href="#kontakt" class="px-4 py-2 bg-cyan-500 text-slate-950 rounded-lg font-semibold hover:bg-cyan-400 transition-all shadow-lg shadow-cyan-500/20">Kontakt</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Sekcija -->
+    <section id="pocetna" class="relative min-h-[calc(100vh-4rem)] flex items-center justify-center overflow-hidden px-6">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(6,182,212,0.1),transparent_50%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(79,70,229,0.15),transparent_50%)]"></div>
+        
+        <div class="max-w-4xl text-center z-10 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-slate-700 bg-slate-800/50 text-xs text-cyan-400">
+                <span class="flex h-2 w-2 rounded-full bg-cyan-400 animate-pulse"></span> Sustav je aktivan v2.6
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight leading-none text-white">
+                Automatizacija i arhitektura <br>
+                <span class="bg-gradient-to-r from-cyan-400 via-sky-400 to-indigo-500 bg-clip-text text-transparent">sljedeće generacije</span>
+            </h1>
+            <p class="text-base sm:text-xl text-slate-400 max-w-2xl mx-auto font-light">
+                Izravna integracija naprednih procesorskih modela i optimiziranih klijentskih sučelja za obradu podataka u realnom vremenu.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                <a href="#znacajke" class="w-full sm:w-auto px-8 py-3 bg-indigo-600 text-white rounded-xl font-medium hover:bg-indigo-500 transition-all shadow-lg shadow-indigo-600/30 text-center">Pokreni modul</a>
+                <a href="#kontakt" class="w-full sm:w-auto px-8 py-3 bg-slate-850 border border-slate-700 text-slate-300 rounded-xl font-medium hover:bg-slate-800 transition-all text-center">Saznaj više</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Značajke (Grid) -->
+    <section id="znacajke" class="py-24 bg-slate-950 border-y border-slate-800 px-6">
+        <div class="max-w-7xl mx-auto space-y-12">
+            <div class="text-center space-y-4">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Optimizirane performanse</h2>
+                <p class="text-slate-400 max-w-xl mx-auto text-sm">Arhitektura niske latencije prilagođena za paralelno izvršavanje zahtjevnih operacija.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Kartica 1 -->
+                <div class="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 flex items-center justify-center text-cyan-400 mb-6 text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">MoE Procesiranje</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Usmjeravanje tokena kroz specijalizirane podskupove parametara za maksimalnu brzinu izračuna.</p>
+                </div>
+                <!-- Kartica 2 -->
+                <div class="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-indigo-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 flex items-center justify-center text-indigo-400 mb-6 text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">GQA Pažnja</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Smanjena veličina KV priručne memorije pruža masivni kontekstni prozor bez gubitka točnosti.</p>
+                </div>
+                <!-- Kartica 3 -->
+                <div class="p-8 bg-slate-900 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all group">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6 text-xl group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-network"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Autonomni Agenti</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">Direktno izvršavanje funkcija i strukturirana sinteza podataka bez ljudske intervencije.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usluge (Završna konverzija) -->
+    <section id="usluge" class="py-24 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="space-y-6">
+            <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-white">Sinteza podataka u jednoj sekundi.</h2>
+            <p class="text-slate-400 text-sm leading-relaxed">
+                Naš sustav automatski eliminira redundanciju informacija. Svi ulazni parametri se parsiraju kroz optimizirane jezične cikluse kako bi se dobila čista, operativna vrijednost.
+            </p>
+            <ul class="space-y-3 text-sm text-slate-300">
+                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Integrirana validacija koda</li>
+                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Formati spremni za produkciju (JSON, XML)</li>
+                <li class="flex items-center gap-3"><i class="fa-solid fa-check text-cyan-400"></i> Rad bez posrednika i suvišnih protokola</li>
+            </ul>
+        </div>
+        <div class="bg-slate-950 p-6 rounded-2xl border border-slate-800 font-mono text-xs text-slate-400 space-y-2 shadow-inner">
+            <div class="text-slate-500">// Izvršavanje optimizacije sustava...</div>
+            <div><span class="text-cyan-400">POST</span> /api/v1/synapse/process <span class="text-emerald-400">200 OK</span></div>
+            <div><span class="text-indigo-400">Context Window:</span> 131,072 / 131,072 tokens</div>
+            <div><span class="text-indigo-400">Memory Latency:</span> 0.04ms</div>
+            <div class="pt-4 text-emerald-400">✓ Uspješno mapirano 18 funkcionalnih čvorova.</div>
+            <div class="w-full bg-slate-900 h-1.5 rounded-full mt-2 overflow-hidden">
+                <div class="bg-cyan-500 h-full w-[85%] animate-[pulse_2s_infinite]"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Sekcija -->
+    <section id="kontakt" class="py-24 bg-slate-950 border-t border-slate-800 px-6">
+        <div class="max-w-xl mx-auto space-y-8">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-bold tracking-tight text-white">Učitaj novi parametar</h2>
+                <p class="text-slate-400 text-sm">Unesite podatke za inicijalizaciju novog projekta.</p>
+            </div>
+            <form class="space-y-4" onsubmit="event.preventDefault(); alert('Podaci poslani u procesor.');">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Identifikator (Ime)</label>
+                    <input type="text" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="Korisnik ili Sustav">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Kanal komunikacije (E-mail)</label>
+                    <input type="email" required class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-500 transition-colors" placeholder="naziv@domena.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-400 uppercase tracking-wider mb-2">Specifikacija zadatka (Poruka)</label>
